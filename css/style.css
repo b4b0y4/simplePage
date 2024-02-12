@@ -14,11 +14,10 @@ body, html {
     font-family: Helvetica, sans-serif;
     background-color: var(--color-bg);
     color: var(--color-txt);
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
     height: 100%;
-    max-width: 992px;
     transition: all var(--global-transition-time) ease-in-out;
 }
 
@@ -138,9 +137,15 @@ main {
     flex: 1;
     display: flex;
     justify-content: center;
-    align-items: center;
+    padding: 0 20px 0 20px;
+    /* align-items: center; */
 }
 
+.content {
+    display: block;
+    max-width: 900px;
+    color: var(--color-txt);
+}
 
 footer {
     display: flex;
