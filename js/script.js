@@ -16,44 +16,6 @@ document.addEventListener('DOMContentLoaded', function () {
 })
 
 
-// JavaScript code to load content of each article into .content area
-
-// Function to load content from article pages
-function loadArticle(articleURL) {
-  fetch(articleURL) // Fetch the article HTML file
-      .then(response => {
-          if (!response.ok) {
-              throw new Error('Network response was not ok')
-          }
-          return response.text() // Get the HTML content as text
-      })
-      .then(html => {
-          document.querySelector('.content').innerHTML = html // Insert the HTML content into .content area
-      })
-      .catch(error => {
-          console.error('There was a problem with the fetch operation:', error)
-      })
-}
-
-// Event listeners for article navigation
-document.addEventListener('DOMContentLoaded', function() {
-  // Example: Load Article 1 content when its link is clicked
-  document.querySelector('nav a[href="article1.html"]').addEventListener('click', function(event) {
-    event.preventDefault() // Prevent default link behavior
-    loadArticle('articles/article1.html') // Load Article 1 content
-})
-
-  // Example: Load Article 2 content when its link is clicked
-  document.querySelector('nav a[href="article2.html"]').addEventListener('click', function(event) {
-      event.preventDefault() // Prevent default link behavior
-      loadArticle('articles/article2.html'); // Load Article 2 content
-  })
-
-  // Add event listeners for other article links as needed
-})
-
-
-
 // Function to calculate the current theme setting based on user preferences
 function calculateSettingAsThemeString({ localStorageTheme, systemSettingDark }) {
     if (localStorageTheme !== null) {
