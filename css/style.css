@@ -170,6 +170,11 @@ footer {
 }
 
 @media (max-width: 600px) {
+
+    a:hover, button:hover {
+        color: var(--color-txt);
+    }
+
     .panel {
         width: 100%;
         max-width: 100%;
