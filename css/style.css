@@ -64,21 +64,15 @@ header {
     align-items: center;
 }
 
-a:hover {
+a:hover, button:hover {
     color: var(--color-hvr);
 }
 
 .mode-button {
     font-size: 1.5em;
     border: none;
-    box-shadow: none;
     color: var(--color-txt);
     background-color: var(--color-bg);
-}
-
-button:hover {
-    color: var(--color-hvr);
-    border-color: var(--color-hvr);
 }
 
 .burger-menu-button {
@@ -86,9 +80,8 @@ button:hover {
     background-color: var(--color-bg);
     color: var(--color-txt);
     font-size: 2em;
-    padding: 0 8px 5px 10px;
+    padding: 0 10px 5px 10px;
     border: none;
-    box-shadow: none;
 }
 
 .panel {
@@ -116,12 +109,11 @@ button:hover {
     color: var(--color-txt);
     font-size: 2em;
     border: none;
-    box-shadow: none;
     z-index: 300;
 }
 
 .links-container {
-    display: flex;
+    display: block;
     text-align: center;
     justify-content: center;
     padding: 10px;
@@ -135,7 +127,7 @@ ul {
 }
 
 .links-container li {
-    margin: 30px;
+    padding: 15px;
     font-size: 1.4em;
 }
 
@@ -172,7 +164,7 @@ footer {
 @media (max-width: 600px) {
 
     a:hover, button:hover {
-        color: var(--color-txt);
+        color: inherit;
     }
 
     .panel {
