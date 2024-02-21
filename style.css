@@ -102,11 +102,11 @@ button {
 
 .close-button {
     position: absolute;
-    top: 14px;
-    right: 19px;
+    top: 8px;
+    right: 16px;
     background-color: var(--color-bg);
     color: var(--color-txt);
-    font-size: 2em;
+    font-size: 2.5em;
     z-index: 300;
 }
 
@@ -125,7 +125,7 @@ ul {
 }
 
 .links-container li {
-    padding: 15px;
+    margin-top: 30px;
     font-size: 1.4em;
 }
 
