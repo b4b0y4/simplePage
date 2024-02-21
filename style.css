@@ -1,13 +1,13 @@
 [data-theme="light"] {
-    --color-bg: #f7f7f7;
-    --color-txt: #003d66;
-    --color-hvr: #1aa3ff;
+    --color-bg: #CCCCCC;
+    --color-txt: #181818;
+    --color-hvr: #7A7A7A;
 }
 
 [data-theme="dark"] {
-    --color-bg: #022a44;
-    --color-txt: #edebdf;
-    --color-hvr: #205d85;
+    --color-bg: #181818;
+    --color-txt: #CCCCCC;
+    --color-hvr: #1F1F1F;
 }
 
 body, html {
@@ -43,19 +43,21 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    padding: 5px;
 }
 
 .logo-container {
     padding-left: 10px;
 }
 
-.logo-container img {
-    max-height: 50px;
+.title {
+    font-size: 1.2em;
+    line-height: 0;
 }
 
-.title {
-    font-size: large;
+a {
+    text-decoration: none;
+    color: var(--color-txt);
 }
 
 .buttons-container {
@@ -63,16 +65,11 @@ header {
     align-items: center;
 }
 
-a:hover, button:hover {
-    color: var(--color-hvr);
-}
-
 button {
     border: none;
     color: var(--color-txt);
     background-color: var(--color-bg);
     cursor: pointer;
-    transition: color 0.3s ease-in-out;
 }
 
 .mode-button {
@@ -87,11 +84,10 @@ button {
 .panel {
     position: fixed;
     top: 0;
-    right: -255px;
-    width: 250px;
+    right: -100%;
+    width: 300px;
     height: 100vh;
     background-color: var(--color-bg);
-    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.5);
     z-index: 200;
     transition: right 0.3s ease;
 }
@@ -102,8 +98,8 @@ button {
 
 .close-button {
     position: absolute;
-    top: 8px;
-    right: 16px;
+    top: 3px;
+    right: 11px;
     background-color: var(--color-bg);
     color: var(--color-txt);
     font-size: 2.5em;
@@ -112,8 +108,6 @@ button {
 
 .links-container {
     display: block;
-    text-align: center;
-    justify-content: center;
     padding: 10px;
     margin-top: 50px;
 }
@@ -125,14 +119,22 @@ ul {
 }
 
 .links-container li {
-    margin-top: 30px;
-    font-size: 1.4em;
+    display: flex;
+    font-size: 2em;
+    margin: 2px;
 }
 
-a {
-    text-decoration: none;
-    color: var(--color-txt);
+.links-container a {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    border-radius: 5px;
+    padding: 10px;
     transition: color 0.3s ease-in-out;
+}
+
+.links-container a:hover {
+    background-color: var(--color-hvr);
 }
 
 main {
@@ -144,7 +146,7 @@ main {
 
 .content {
     display: block;
-    max-width: 600px;
+    max-width: 700px;
     color: var(--color-txt);
 }
 
@@ -160,10 +162,6 @@ footer {
 }
 
 @media (max-width: 600px) {
-
-    a:hover, button:hover {
-        color: inherit;
-    }
 
     .panel {
         width: 100%;

@@ -9,6 +9,11 @@ document.addEventListener('DOMContentLoaded', function () {
         overlay.style.display = "block"
     })
 
+    overlay.addEventListener('click', function () {
+      panel.classList.remove('open')
+      overlay.style.display = "none"
+  })
+
     closeButton.addEventListener('click', function () {
         panel.classList.remove('open')
         overlay.style.display = "none"
