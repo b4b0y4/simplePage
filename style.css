@@ -1,7 +1,7 @@
 [data-theme="light"] {
     --color-bg: #CCCCCC;
     --color-txt: #181818;
-    --color-hvr: #7A7A7A;
+    --color-hvr: #b9b9b9;
 }
 
 [data-theme="dark"] {
@@ -124,9 +124,13 @@ ul {
     margin: 2px;
 }
 
+span {
+    margin-right: 15px;
+}
+
 .links-container a {
     display: flex;
-    justify-content: space-evenly;
+    align-items: center;
     width: 100%;
     border-radius: 5px;
     padding: 10px;
@@ -173,4 +177,9 @@ footer {
     .panel.open {
         right: 0;
     }
+
+    .links-container a {
+        justify-content: center;
+    }
+
 }
