@@ -121,7 +121,6 @@ ul {
 .links-container li {
     display: flex;
     font-size: 2em;
-    margin: 2px;
 }
 
 span {
