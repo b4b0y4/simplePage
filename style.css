@@ -92,7 +92,7 @@ a {
 }
 
 .close .bar:nth-child(1) {
-  transform: rotate(45deg) translate(5px, 5px);
+  transform: rotate(45deg) translate(5.5px, 5.5px);
 }
 
 .close .bar:nth-child(2) {
@@ -100,7 +100,7 @@ a {
 }
 
 .close .bar:nth-child(3) {
-  transform: rotate(-45deg) translate(7px, -7px);
+  transform: rotate(-45deg) translate(5.5px, -5.5px);
 }
 
 .panel {
