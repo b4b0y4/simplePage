@@ -1,53 +1,60 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>simplePage</title>
-    <link rel="icon" href="" type="image/x-icon" />
-    <link rel="stylesheet" href="./style.css" />
-  </head>
-  <body>
-    <div class="overlay" id="overlay"></div>
-    <header>
-      <div class="logo-container">
-        <a href="index.html">
-          <h1 class="title">simplePage</h1>
-        </a>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>simplePage</title>
+  <link rel="icon" href="" type="image/x-icon" />
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <div class="overlay" id="overlay"></div>
+  <header>
+    <div class="logo-container">
+      <a href="index.html">
+        <h1 class="title">simplePage</h1>
+      </a>
+    </div>
+    <div class="buttons-container">
+      <button class="mode-button" data-theme-toggle>&#9680;</button>
+      <div class="burger-menu">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
       </div>
-      <div class="buttons-container">
-        <button class="mode-button" data-theme-toggle>&#9680;</button>
-        <button class="burger-menu-button">&#9776;</button>
-        <div class="panel" id="panel">
-          <nav class="links-container">
-            <ul>
-              <li>
-                <a href="./links/article1.html"><span>🦄</span>first post</a>
-              </li>
-              <li>
-                <a href="./links/article2.html"><span>🐝</span>other post</a>
-              </li>
-              <li>
-                <a href="#"><span>🐦</span>twitter </a>
-              </li>
-              <li>
-                <a href="#"><span>🐙</span>github</a>
-              </li>
-            </ul>
-          </nav>
-          <button class="close-button">&#215;</button>
-        </div>
+
+      <div class="panel" id="panel">
+        <nav class="links-container">
+          <ul>
+            <li>
+              <a href="./links/article1.html"><span>🦄</span>first post</a>
+            </li>
+            <li>
+              <a href="./links/article2.html"><span>🐝</span>other post</a>
+            </li>
+            <li>
+              <a href="#"><span>🐦</span>twitter </a>
+            </li>
+            <li>
+              <a href="#"><span>🐙</span>github</a>
+            </li>
+          </ul>
+        </nav>
       </div>
-    </header>
+    </div>
+  </header>
 
-    <main>
-      <div class="content"></div>
-    </main>
+  <main>
+    <div class="content"></div>
+  </main>
 
-    <footer>
-      <p>simplePage ☺︎</p>
-    </footer>
+  <footer>
+    <p>simplePage ☺︎</p>
+  </footer>
 
-    <script src="./script.js" type="module"></script>
-  </body>
+  <script src="./script.js" type="module"></script>
+</body>
+
 </html>
